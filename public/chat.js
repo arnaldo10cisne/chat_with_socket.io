@@ -30,6 +30,7 @@ send.addEventListener('click', () => {
     socket.emit('chat:message_client', data)
     actions.innerHTML = ''
     username.setAttribute('disabled', true)
+    message.value = ''
 })
 
 message.addEventListener('keypress', () => {
